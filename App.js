@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
-  View,
+  Alert,
+  ScrollView,
   Text,
   TextInput,
   TouchableOpacity,
-  ScrollView,
-  Alert,
+  View,
 } from "react-native";
 
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { styles } from "./styles";
+import { styles } from "./Styles";
 
 // Key used to identify the saved tasks in local storage
 const STORAGE_KEY = "@lavender_days_tasks";
@@ -260,7 +260,7 @@ export default function App() {
       {/* HEADER: App title and welcome message */}
       <View style={styles.header}>
         <View>
-          <Text style={styles.heading}>Hello, Sunshine! ♡</Text>
+          <Text style={styles.heading}>Hello, Dianna! ♡</Text>
 
           <Text style={styles.subtitle}>Let's make this week productive.</Text>
         </View>
